@@ -17,11 +17,11 @@ for (let i = 0; i < 10; i++){
 
 //1.3
 
-for (let i = 0; i <= 10; i++){
+for (let i = 1; i < 11; i++){
 
-    if (i == 10){
-        console.log ('Dormido!');
-    } else {
+    if (i >= 1 && i < 10){
         console.log ('Intentando dormir 🐑');
+    } else {
+        console.log ('Dormido!');
     }
 }
