@@ -14,15 +14,15 @@ const alumns = [
     let aprobadosT2 = 0;
     let aprobadosT3 = 0;
 
-    if (alumns[i].T1 == true){
+    if (alumns[i].T1 ){
         aprobadosT1++;
     }
 
-    if ((alumns[i].T2 == true)){
+    if ((alumns[i].T2 )){
         aprobadosT2++;
     }
 
-    if ((alumns[i].T3 == true)){
+    if ((alumns[i].T3 )){
         aprobadosT3++;
     }
 

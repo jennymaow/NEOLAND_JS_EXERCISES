@@ -9,10 +9,8 @@ const toys = [
 
 for (let toy of toys){
     
-    let nombre = toy.name;
-    
-    if (nombre.includes ("gato")) {
-        toys.pop();
+    if (toy.name.includes ("gato")) {
+        toys.splice(toys.indexOf(toy));
         /* console.log (toy); */
     }
 }    

@@ -1,9 +1,7 @@
 const products = ['Camiseta de Pokemon', 'Pantalón coquinero', 'Gorra de gansta', 'Camiseta de Basket', 'Cinrurón de Orión', 'AC/DC Camiseta'];
 for ( let i = 0; i < products.length; i++){
 
-    const word = products[i];
-
-   if (word.includes ('Camiseta') === true){
+   if (products[i].includes ('Camiseta') === true){
     console.log (products[i]);
    }
 }

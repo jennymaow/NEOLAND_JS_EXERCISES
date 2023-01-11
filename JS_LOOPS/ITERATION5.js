@@ -9,12 +9,12 @@ const placesToTravel = [
 for ( let i = 0; i < placesToTravel.length; i++){
 
     if (placesToTravel[i].id == 11) {
-        placesToTravel.splice(1,1);
+        placesToTravel.splice(i);
     }
     /* console.log (placesToTravel); */
 
     if (placesToTravel[i].id == 40 ){
-        placesToTravel.splice(2,1);
+        placesToTravel.splice(i);
     }
     /* console.log (placesToTravel); */
 }
