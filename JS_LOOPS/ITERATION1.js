@@ -6,19 +6,5 @@ for ( let i = 0; i < products.length; i++){
    }
 }
 
+//Ejemplo de clase comprobar con todo en mayúscula por si hay "camiseta" en minusc.
 
-/* const listFilms = ['Reservoir dogs', 'The Big Lewoski', 'End Game'];
-
-console.log(listFilms.includes('dogs'));
-
-Este sale false
-
-
-
-const frase = "Hasta el infinito y más allá!";
-console.log(frase.includes("infinito")); 
-
-Este sale true
-
-
-*/

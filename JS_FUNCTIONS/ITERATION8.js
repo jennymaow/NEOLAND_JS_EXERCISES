@@ -12,17 +12,18 @@ const counterWords = [
     'code'
   ];
 
-
-  function repeatCounter(param) {
-    let orderedCounterWords = counterWords.sort();
-    let newCounterWords = [];
-    for (word of orderedCounterWords){
-        if (word == orderedCounterWords[orderedCounterWords.indexOf(word) + 1]){
-            newCounterWords.push(word);
-            console.log (newCounterWords.length);
-        }
-        
+  
+ function repeatCounter(counterWords) {
+      const orderedCounterWords = counterWords.sort();
+      const newCounterWords = [];
+    for (word of counterWords ){
+      let counter = orderedCounterWords.filter ((wordSearched) => wordSearched === word);
+      newCounterWords.push (` ${word} se repite ${counter.length} veces`);console.log (counter);
     }
-  }
+   console.log (newCounterWords);
+   
+
+  } 
+ 
 
   repeatCounter (counterWords);

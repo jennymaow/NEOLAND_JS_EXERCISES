@@ -13,6 +13,8 @@ for (let toy of toys){
         toys.splice(toys.indexOf(toy));
         /* console.log (toy); */
     }
+
+    //Declarar un array nuevo y push() en él los valores que no tienen gato (con condicional). Imprimir nuevo array.
 }    
 
 console.log (toys);
