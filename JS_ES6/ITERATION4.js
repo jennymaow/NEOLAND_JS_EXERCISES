@@ -15,11 +15,28 @@ console.log(names);
 
 for (name1 of names) {
   const letters = [...name1];
-  console.log (letters);
-  if (letters[0] == "A") {
+  /* console.log (letters);
+    console.log (letters[0]); */
+  if (letters[0] === "A") {
     name1 = "Anacleto";
   }
 }
 
-console.log (names);
+console.log(names);
 
+//4.3
+
+const cities = [
+  { isVisited: true, name: "Tokyo" },
+  { isVisited: false, name: "Madagascar" },
+  { isVisited: true, name: "Amsterdam" },
+  { isVisited: false, name: "Seul" },
+];
+
+const visitedCities = cities.map (visited => visited.isVisited);
+console.log (visitedCities);
+
+const namesCities = cities.map((city) => (visitedCity == true ? city.name + "Visitado" : city.name));
+
+
+console.log(namesCities);
