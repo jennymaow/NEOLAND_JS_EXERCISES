@@ -13,7 +13,7 @@ const nameFinder = [
   ];
 
 
-  function finderName(nameFinder,nameUser) {
+/*   function finderName(nameFinder,nameUser) {
     
     let counter = 0;
 
@@ -34,7 +34,27 @@ const nameFinder = [
     }
 
   }
+ */
+  /* finderName (nameFinder,"Peter");
+  finderName (nameFinder,"Jenny"); */
 
-  finderName (nameFinder,"Peter");
-  finderName (nameFinder,"Jenny");
+  let nameUser = "Tony";
+  const finderName = nameFinder.filter(
+    (name) =>  name.includes(nameUser)
+  );
+   // console.log (finderName);
+
+  if (finderName.length > 0){
+    console.log ("True");
+   
+    for ( let name of nameFinder){
+        if (name == finderName[0]){
+           let position= nameFinder.indexOf(name);
+            console.log ("Se encuentra en la posición", position);
+        }
+    }
+    
+  }
+  
+
 

@@ -15,14 +15,14 @@ const counterWords = [
 
   function repeatCounter(param) {
     let orderedCounterWords = counterWords.sort();
-    let counter = 0;
+    let newCounterWords = [];
     for (word of orderedCounterWords){
         if (word == orderedCounterWords[orderedCounterWords.indexOf(word) + 1]){
-            counter++;
+            newCounterWords.push(word);
+            console.log (newCounterWords.length);
         }
         
     }
-    console.log (counter);
   }
 
   repeatCounter (counterWords);
