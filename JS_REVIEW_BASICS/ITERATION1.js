@@ -6,8 +6,14 @@ const movies = [
 ];
 
 
-for (movie of movies){
-    const categoriesMovies = [...(movie.categories)];
+/* for (movie of movies){
+    const categoriesMovies = [...movie.categories];
     console.log (categoriesMovies);
-}
+} */
+
+const categoriesMovies1= movies.map(category=>category.categories);
+console.log (categoriesMovies1); 
+
+const categoriesMovies = categoriesMovies1.join();
+console.log (categoriesMovies);
 
