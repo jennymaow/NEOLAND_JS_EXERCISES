@@ -31,7 +31,8 @@ console.log (toyNew);
 //3.5
 
 const colors = ['rojo', 'azul', 'amarillo', 'verde', 'naranja'];
-const coloresNew = [...colors.splice(2,1)];
+const coloresNew = [...colors];
+const colorsNew = coloresNew.splice(2,1);
 console.log (coloresNew);
 
 
