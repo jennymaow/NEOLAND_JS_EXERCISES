@@ -36,7 +36,13 @@ const cities = [
 const visitedCities = cities.map (visited => visited.isVisited);
 console.log (visitedCities);
 
-const namesCities = cities.map((city) => (visitedCity == true ? city.name + "Visitado" : city.name));
-
-
+const namesCities = cities.map((city) => (city.name));
 console.log(namesCities);
+
+for (let i=0; i<visitedCities.length;i++){
+  if (visitedCities[i]){
+    namesCities[i]= namesCities[i] + " (Visitado)";
+  }
+}
+
+console.log (namesCities);
