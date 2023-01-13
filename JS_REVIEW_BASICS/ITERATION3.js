@@ -28,3 +28,10 @@ const users = [
         }
     },
 ]
+
+let favoriteSounds = [];
+for (let user of users){
+    
+    favoriteSounds.push (user.favoritesSounds);
+}
+console.log (favoriteSounds);

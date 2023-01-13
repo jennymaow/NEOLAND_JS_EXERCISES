@@ -16,7 +16,7 @@ const duplicates = [
   function removeDuplicates(param) {
     let orderedDuplicates = duplicates.sort();
   
-    for (food of orderedDuplicates){
+    for (let food of orderedDuplicates){
 
         if (food == orderedDuplicates[orderedDuplicates.indexOf(food) + 1]){
             orderedDuplicates.splice(orderedDuplicates.indexOf(food), 1 );

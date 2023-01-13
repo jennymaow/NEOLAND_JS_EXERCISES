@@ -3,7 +3,7 @@ function average(numbers) {
   
     let sumNumbers = 0;
 
-    for (number of numbers){
+    for (let number of numbers){
 
         sumNumbers += number;
         
