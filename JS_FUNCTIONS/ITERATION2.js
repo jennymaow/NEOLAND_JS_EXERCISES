@@ -18,10 +18,12 @@ function findLongestWord1(avengers) {
         }
        //  console.log (longestWord);
   }
-  console.log (longestWord1);
+  return longestWord1;
 } 
 
-findLongestWord1(avengers);
+console.log (findLongestWord1(avengers));
+
+
 
 //Forma con bucle for i
 
