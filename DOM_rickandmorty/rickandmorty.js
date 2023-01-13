@@ -653,9 +653,9 @@ const printInDocument = (list) => {
     container.innerHTML += `
             <div class="card">
                 <h2>${item.name}</h2>
-                <p>Status: ${item.status}</p>
-                <p>Origin: ${item.origin}</p>
-                <p>Location: ${item.location}</p>
+                <p><span style="font-weight:bold">Status:</span> ${item.status}</p>
+                <p><span style="font-weight:bold">Origin:</span> ${item.origin}</p>
+                <p><span style="font-weight:bold">Location:</span> ${item.location}</p>
                 <img src=${item.image} alt=${item.name} class="image"/>
             </div>
             `;
