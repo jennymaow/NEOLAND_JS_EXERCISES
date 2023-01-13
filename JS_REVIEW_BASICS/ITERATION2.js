@@ -28,3 +28,23 @@ const users = [
         }
     },
 ]
+
+let favoriteSounds = [];
+for (let user of users){
+    
+    favoriteSounds.push (user.favoritesSounds);
+}
+console.log (favoriteSounds);
+
+let sumVolume = 0;
+
+
+for (let favoriteSound of favoriteSounds){
+    for (let key in favoriteSound){
+    sumVolume += favoriteSound[key].volume;
+}
+
+}
+
+let averageVolume= sumVolume/ (3*favoriteSounds.length);
+console.log (averageVolume);
