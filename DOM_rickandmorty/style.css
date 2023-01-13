@@ -1,0 +1,19 @@
+body {
+    background-color: rgba(8, 8, 8, 0.838);
+    width: 100%;
+}
+
+h2{
+    font-weight: bold;
+    padding: 0 10px;
+}
+p {
+    font-size: 1.2rem;
+  
+    padding: 0 10px;
+}
+
+h2,p {
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(234, 234, 234);
+}
