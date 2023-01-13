@@ -11,11 +11,17 @@ const videogames = [
   },
 ];
 
-const gameGenders = videogames.map (gender => gender.genders);
-console.log (gameGenders);
+const gendersRPG = (list) => {
+  return list.filter((gender) => gender.genders.includes("RPG"));
+};
 
-const gendersRPG = videogames.find (genderRPG => genderRPG.genders ==="RPG");
-console.log (gendersRPG);
+const filterGenders = gendersRPG(videogames);
+console.log(filterGenders);
 
 
+const sumaScore = (list) => {
+  return list.reduce ((acc,score)=> acc+ score.score, 0);
+}
 
+const promedioScore = sumaScore(filterGenders);
+console.log (promedioScore/filterGenders.length);
