@@ -648,15 +648,25 @@ const characters = {
 const container = document.querySelector("#container");
 console.log(container);
 
+container.innerHTML += `
+            <div class = "logo">
+               <img src= "https://assets.stickpng.com/images/58f37720a4fa116215a9240f.png" /> 
+            </div>
+            `;
+
 const printInDocument = (list) => {
+
   for (const item of list) {
     container.innerHTML += `
+            
             <div class="card">
                 <h2>${item.name}</h2>
                 <p><span style="font-weight:bold">Status:</span> ${item.status}</p>
                 <p><span style="font-weight:bold">Origin:</span> ${item.origin}</p>
                 <p><span style="font-weight:bold">Location:</span> ${item.location}</p>
-                <img src=${item.image} alt=${item.name} class="image"/>
+            </div>
+            <div class = "image">
+                <img src=${item.image} alt=${item.name} />
             </div>
             `;
   }
@@ -674,4 +684,4 @@ const mapCharacters = () => {
   printInDocument(res);
 };
 
-mapCharacters ();
+mapCharacters();

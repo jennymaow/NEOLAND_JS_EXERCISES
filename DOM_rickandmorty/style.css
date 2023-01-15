@@ -1,7 +1,13 @@
 body {
-    background-color: rgba(8, 8, 8, 0.838);
+    background-color: rgb(91, 146, 54);
     width: 100%;
+
 }
+.logo {
+    width: 80%;
+    margin: auto;
+}
+
 
 h2{
     font-weight: bold;
@@ -15,4 +21,18 @@ p {
 h2,p {
     font-family:Arial, Helvetica, sans-serif;
     color: rgb(234, 234, 234);
+}
+
+.card{
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.card,.image {
+  
+    display: inline-block;
+}
+
+img{
+    width: 42% ;
 }
