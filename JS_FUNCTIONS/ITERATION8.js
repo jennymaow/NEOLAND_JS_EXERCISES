@@ -15,13 +15,13 @@ const counterWords = [
   
  function repeatCounter(counterWords) {
       const orderedCounterWords = counterWords.sort();
-      const newCounterWords = [];
+      const newCounterWords = new Set();
     for (let word of counterWords ){
       let counter = orderedCounterWords.filter ((wordSearched) => wordSearched === word);
-      newCounterWords.push (` ${word} se repite ${counter.length} veces`);console.log (counter);
+      newCounterWords.add (`${word} se repite ${counter.length} veces`);
     }
-   console.log (newCounterWords);
-   
+
+    console.log (newCounterWords);
 
   } 
  

@@ -34,7 +34,7 @@ for (let user of users){
     
     favoriteSounds.push (user.favoritesSounds);
 }
-console.log (favoriteSounds);
+// console.log (favoriteSounds);
 
 let sumVolume = 0;
 

@@ -9,12 +9,25 @@ const toys = [
 
 for (let toy of toys){
     
-    if (toy.name.includes ("gato")) {
+    if (toy.name.toLowerCase().includes ("gato")) {
         toys.splice(toys.indexOf(toy));
         /* console.log (toy); */
     }
 
-    //Declarar un array nuevo y push() en él los valores que no tienen gato (con condicional). Imprimir nuevo array.
-}    
+    //También se puede declarar un array nuevo y push() en él los valores que no tienen gato (con condicional). Imprimir nuevo array.
+}  
+
+console.log (toys);
+
+//Haciendo una función que funciona para cualquier array y word.
+
+const removeWord = (list, word)=>{
+    if (list.name.toLowerCase().includes (word.toLowerCase())) {
+       list.splice(list.indexOf(word),1);
+        /* console.log (toy); */
+    }
+
+}
+
 
 console.log (toys);

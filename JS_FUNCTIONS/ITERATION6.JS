@@ -26,4 +26,17 @@ const duplicates = [
     console.log (orderedDuplicates);
   }
 
-  removeDuplicates (duplicates);
+removeDuplicates (duplicates);
+
+
+
+  // Con un Set, sin usar función.
+
+  let removeDuplicatesNew = new Set ();
+
+  for (let food of duplicates) {
+    removeDuplicatesNew.add(food);
+  }
+
+  console.log (removeDuplicatesNew);
+  

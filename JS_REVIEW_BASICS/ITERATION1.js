@@ -11,9 +11,19 @@ const movies = [
     console.log (categoriesMovies);
 } */
 
-const categoriesMovies1= movies.map(category=>category.categories);
-console.log (categoriesMovies1); 
+const categoriesMovies1 = (list)=> { 
+    return list.map(category => category.categories);
+    
 
-const categoriesMovies = categoriesMovies1.join();
-console.log (categoriesMovies);
+}
 
+const moviesCategories= categoriesMovies1 (movies);
+
+let categories = new Set();
+for (let item of moviesCategories){
+    for (let category of item){
+        categories.add (category);
+    }
+}
+
+console.log (categories);

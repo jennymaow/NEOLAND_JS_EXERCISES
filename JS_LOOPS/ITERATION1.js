@@ -6,5 +6,14 @@ for ( let i = 0; i < products.length; i++){
    }
 }
 
-//Ejemplo de clase comprobar con todo en mayúscula por si hay "camiseta" en minusc.
+//Ejercicio hecho con una función, que funciona para cualquier palabra y cualquier array.
 
+const searchWord = (list,word) => {
+for (let product of list){
+   if (product.toLowerCase().includes(word.toLowerCase())){
+      console.log (product);
+   }
+}
+}
+
+searchWord(products, "Camiseta");

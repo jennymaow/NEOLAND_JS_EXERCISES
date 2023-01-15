@@ -1,20 +1,15 @@
-const words = ['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño'];
+const words = [
+  "Mesirve",
+  "Cristiano Romualdo",
+  "Fernando Muralla",
+  "Ronalguiño",
+];
 
 const swap = (list, i, j) => {
+    const word = list[i];
+    list[i]=list[j];
+    list[j]= word;
+    console.log (list);
+};
 
-    for (let word of list){
-      
-        if ((list.indexOf(word)) == i){
-
-            (list.indexOf(word)) = j;
-
-        } else if ((list.indexOf(word)) == j){
-
-            (list.indexOf(word)) = i;
-        }
-    }
-   
-    return list;
-}
-
-swap(words,1,3);
+swap(words, 1, 3);
