@@ -33,19 +33,25 @@ const users = [
   },
 ];
 
-let favoriteSounds = [];
+/* let favoriteSounds = [];
 for (let user of users) {
   favoriteSounds.push(user.favoritesSounds);
-}
-console.log(favoriteSounds);
+} */
+//console.log(favoriteSounds);
 
 let sounds = [];
-for (let favoritesSound of favoriteSounds) {
+/* for (let favoritesSound of favoriteSounds) {
   for (let sound in favoritesSound) {
     sounds.push(sound);
   }
-}
+} */
 
+//Más simplificado, sin almacenar en un array los favoritesSounds
+for (let user of users) {
+  for (let key in user.favoritesSounds) {
+    sounds.push (key);
+  }
+}
 
 let numberFavorites = new Set();
 for (let sound of sounds) {
