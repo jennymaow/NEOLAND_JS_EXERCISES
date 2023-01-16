@@ -59,5 +59,6 @@ for (let user of users) {
   }
 }
 
+const objectLenght = Object.keys(favoriteSounds).length;
 let averageVolume2 = sumVolume / (3 * users.length);
 console.log(averageVolume2);
