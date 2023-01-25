@@ -11,10 +11,10 @@ document.body.insertBefore(newDiv2, myH2);
 
 //2.3
 
-console.log(newDiv2);
-/*  for (let i = 0; (i = 5); i++) {
-  newDiv2.insertAdjacentHTML("afterbegin", "<p></p>");
-}  */
+/* for (let i = 1; (i = 6); i++) {
+  const newP2 = document.createElement("p");
+  newDiv2.appendChild (newP2);
+}; */
 
 //2.4
 myH2.insertAdjacentHTML("beforebegin", "<p>Soy dinámico!</p>");
