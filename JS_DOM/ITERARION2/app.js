@@ -1,23 +1,29 @@
 let newDiv = document.createElement("div");
-let newDiv2 = document.createElement("div");
 let newP = document.createElement("p");
 let myH2 = document.querySelector("h2");
 
 newDiv.appendChild(newP);
 document.body.insertBefore(newDiv, myH2);
-console.log(newDiv);
 
-document.body.insertBefore(newDiv2, myH2);
 
 //2.3
 
-/* for (let i = 1; (i = 6); i++) {
+let newDiv2 = document.createElement("div");
+ document.body.appendChild(newDiv2);
+ for (let i = 1; (i < 6); i++) {
   const newP2 = document.createElement("p");
   newDiv2.appendChild (newP2);
-}; */
+};
 
 //2.4
-myH2.insertAdjacentHTML("beforebegin", "<p>Soy dinámico!</p>");
+
+//myH2.insertAdjacentHTML("beforebegin", "<p>Soy dinámico!</p>");
+let newP1 = document.createElement ("p");
+let text1= document.createTextNode("Soy dinámico!");
+newP1.appendChild(text1);
+document.body.appendChild(newP1)
+console.log(newP1);
+
 
 //2.5
 let textH2 = document.createTextNode("Wubba Lubba dub dub");
