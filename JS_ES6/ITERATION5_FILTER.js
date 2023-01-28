@@ -43,12 +43,6 @@ for (playerLegend of playersLegend){
 console.log (playersLegend);
 
 
-//5.6
-
-let input = "i";
-
-const playersWithInput = streamers.filter (playerInput => playerInput.name.toLowerCase().includes(input));
-console.log (playersWithInput);
 
 
 
