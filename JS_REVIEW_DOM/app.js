@@ -62,13 +62,7 @@ const newButton = document.createElement("button");
 document.body.appendChild(newButton);
 newButton.innerHTML = "X";
 newButton.addEventListener("click", (event) => {
-  for (let i = 0; i < cardsDiv.lenght; i++) {
-    if ((i = cardsDiv.length - 1)) {
-      //cardsDiv.pop();
-      cardsDiv[i].remove();
-    }
-    console.log(countries);
-  }
+  myNewDiv.removeChild(myNewDiv.lastChild);
 });
 
 //1.6
@@ -79,6 +73,6 @@ for (cardDiv of cardsDiv) {
   cardDiv.appendChild(myBtn);
   myBtn.addEventListener("click", (event) => {
     cardDiv.remove();
-    console.log(cardsDiv);
+    console.log(cardDiv);
   });
 }
