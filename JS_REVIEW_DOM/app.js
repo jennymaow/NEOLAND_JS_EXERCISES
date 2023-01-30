@@ -6,8 +6,11 @@ const countryList = document.createElement("ul");
 
 document.body.appendChild(countryList);
 
-for (country of countries1) {
-  countryList.insertAdjacentHTML("afterbegin", `<li>${country}</li>`);
+for (const country of countries1) {
+  const li = document.createElement("li");
+  li.textContent = country;
+  //countryList.insertAdjacentHTML("afterbegin", `<li>${country}</li>`);
+  countryList.appendChild(li);
 }
 
 //1.2
@@ -40,39 +43,48 @@ const countries = [
 ];
 
 const myNewDiv = document.createElement("div");
-
 document.body.appendChild(myNewDiv);
 
-const printInDocument = (array) => {
-  for (item of array) {
-    myNewDiv.innerHTML += `
+const printInDocument = (countries) => {
+  for (country of countries) {
+    /*  myNewDiv.innerHTML += `
         <div class="card">
             <h4>${item.title}</h4>
             <img src=${item.imgUrl} alt=${item.title}>
         </div>
-        `;
+        `; */
+    const myDivCard = document.createElement("div");
+    myDivCard.classList.add("card");
+    const h4 = document.createElement("h4");
+    const img = document.createElement("img");
+    h4.textContent = country.title;
+    img.src = country.imgUrl;
+    img.alt = country.title;
+    
+    const myBtn = document.createElement("button");
+    myBtn.innerHTML = "X";
+    myDivCard.appendChild(h4);
+    myDivCard.appendChild(img);
+    myDivCard.appendChild(myBtn);
+    myNewDiv.appendChild (myDivCard);
+    myBtn.addEventListener("click", (event) => {
+      myDivCard.remove();
+    });
   }
 };
 
+
+document.body.appendChild (myNewDiv);
 printInDocument(countries);
 
 //1.5
-const cardsDiv = document.querySelectorAll("div.card");
+const myDivCard = document.querySelector("div.card");
 const newButton = document.createElement("button");
 document.body.appendChild(newButton);
-newButton.innerHTML = "X";
+newButton.innerHTML = "Eliminar el último";
 newButton.addEventListener("click", (event) => {
   myNewDiv.removeChild(myNewDiv.lastChild);
+  //cardsDiv[cardsDiv.length - 1].remove();
 });
 
 //1.6
-
-for (cardDiv of cardsDiv) {
-  const myBtn = document.createElement("button");
-  myBtn.innerHTML = "X";
-  cardDiv.appendChild(myBtn);
-  myBtn.addEventListener("click", (event) => {
-    cardDiv.remove();
-    console.log(cardDiv);
-  });
-}
